@@ -36,7 +36,7 @@ private RecyclerView recycleView;
         contactsList.add(new Contacts("Sanam Thapa","12345678",R.drawable.noavatar));
         contactsList.add(new Contacts("Sujen Gurung","12345678",R.drawable.noavatar));
         contactsList.add(new Contacts("Ashant Thapa","12345678",R.drawable.noavatar));
-        contactsList.add(new Contacts("Risav Maskey","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Rishav Maskey","12345678",R.drawable.noavatar));
 
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);
