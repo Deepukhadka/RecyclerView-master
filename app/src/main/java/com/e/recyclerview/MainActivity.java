@@ -2,6 +2,7 @@ package com.e.recyclerview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -21,15 +22,26 @@ private RecyclerView recycleView;
         recycleView = findViewById(R.id.recycleView);
 
         List<Contacts> contactsList = new ArrayList<>();
-        contactsList.add(new Contacts("Saugat Malla", "908011122", R.drawable.saugat));
-        contactsList.add(new Contacts("Rajesh Hamal", "908092212", R.drawable.rajesh));
-        contactsList.add(new Contacts("Dayahang Rai", "908092110", R.drawable.dahayang));
-        contactsList.add(new Contacts("Bhuwan KC", "908092211", R.drawable.bhuwan));
+        contactsList.add(new Contacts("Aakash Shrestha","12345678",R.drawable.aakash));
+        contactsList.add(new Contacts("Aashirman Joshi","12345678",R.drawable.aashirman));
+        contactsList.add(new Contacts("Anmol KC","12345678",R.drawable.anmol));
+        contactsList.add(new Contacts("Bhuwan KC","12345678",R.drawable.bhuwan));
+        contactsList.add(new Contacts("Dahayang Rai","12345678",R.drawable.dahayang));
+        contactsList.add(new Contacts("Nischal Basnet","12345678",R.drawable.nischal));
+        contactsList.add(new Contacts("Paul Shah","12345678",R.drawable.paul));
+        contactsList.add(new Contacts("Pradeep Khadka","12345678",R.drawable.pradeep));
+        contactsList.add(new Contacts("Rajesh Himal","12345678",R.drawable.rajesh));
+        contactsList.add(new Contacts("Saugat Malla","12345678",R.drawable.saugat));
+
+        contactsList.add(new Contacts("Sanam Thapa","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Sujen Gurung","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Ashant Thapa","12345678",R.drawable.noavatar));
+        contactsList.add(new Contacts("Risav Maskey","12345678",R.drawable.noavatar));
 
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);
         recycleView.setAdapter(contactsAdapter);
-        recycleView.setLayoutManager(new LinearLayoutManager(this));
+        recycleView.setLayoutManager(new GridLayoutManager(this,2));
     }
 
 }
